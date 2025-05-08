@@ -1,0 +1,68 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+/* Styling Inputs and Textarea */
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Includes padding and border in width/height */
+}
+
+form textarea {
+    height: 40px; /* Align height with input fields */
+    resize: none; /* Prevent resizing */
+}
+
+/* Button Styling */
+form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 5px 0; /* Add some spacing */
+}
+
+form button#clear-inputs {
+    background-color: #f44336; /* Red color for Clear button */
+}
+
+form button:hover {
+    opacity: 0.9;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+thead {
+    background-color: #f4f4f4;
+}

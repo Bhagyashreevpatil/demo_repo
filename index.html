@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <form id="expense-form">
+        <div class="form-group">
+            <label for="category">Category</label>
+            <input type="text" id="category" required>
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount</label>
+            <input type="number" id="amount" required>
+        </div>
+        <div class="form-group">
+            <label for="date">Date</label>
+            <input type="date" id="date" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" required></textarea>
+        </div>
+        <button type="submit">Add Expense</button>
+        <button type="button" id="clear-inputs">Clear</button>
+    </form>
+
+    <h2>Total Expenses: ₹<span id="total-expenses">0.00</span></h2>
+    <table id="expense-table">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Expenses will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
